@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="form_form_listing_data_source" xsi:type="string">My\Form\Model\ResourceModel\Customer\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="My\Form\Model\ResourceModel\Customer\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">custo_table</argument>
+            <argument name="resourceModel" xsi:type="string">My\Form\Model\ResourceModel\Customer</argument>
+        </arguments>
+    </type>
+</config>

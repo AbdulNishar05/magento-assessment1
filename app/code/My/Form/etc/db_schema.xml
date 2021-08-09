@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="custo_table" resource="default" engine="innodb" comment="Table comment">
+        <column xsi:type="int" name="id" padding="11" unsigned="false" nullable="false" identity="true"  comment=""/>
+        <column xsi:type="text" name="name"  />
+        <column xsi:type="text" name="age"  nullable="false"  />
+        <column xsi:type="text" name="image"   nullable="false"  />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+    </table>
+</schema>

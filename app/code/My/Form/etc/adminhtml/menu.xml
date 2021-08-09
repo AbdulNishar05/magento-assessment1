@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="My_Form::menu_form" title="Customer Form" translate="title" module="My_Form" sortOrder="10" resource="My_Form::menu_form" parent="Magento_Customer::customer" action="form/form/index"/>
+    </menu>
+</config>
